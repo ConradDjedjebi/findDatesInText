@@ -19,6 +19,7 @@ public class BasicNodeTest {
         BasicNode<Integer> node2 = new BasicNode<Integer>(8260);
         BasicNode<Integer> node = new BasicNode<Integer>(500, node1, node2);
         BasicNode<Integer> cloned = node.clone();
+        //TODO: check that data and meta are cloned!
         assertEquals(node.getData(), cloned.getData(), "node and cloned node should have same data");
         assertNotEquals(Integer.toHexString(node.hashCode()), Integer.toHexString(cloned.hashCode()), "cloned node should have dfferent hashcode");
         assertNotEquals(Integer.toHexString(node.getLeft().hashCode()), Integer.toHexString(cloned.getLeft().hashCode()), "cloned node's childs should have dfferent hashcodes");

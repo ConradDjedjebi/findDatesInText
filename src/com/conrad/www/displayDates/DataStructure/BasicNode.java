@@ -1,5 +1,5 @@
 /**
- * @author Conrad Djedjebi (protected by copyrights)
+ * @author Conrad Djedjebi
  * @date 07/10/18
  * @project FiftyFive_Test
  */
@@ -176,6 +176,7 @@ public class BasicNode<T extends Comparable<T>> implements Cloneable {
             clonedObj.left = this.left.clone();
         if(this.right != null)
             clonedObj.right = this.right.clone();
+        //TODO: clone data and meta
         return clonedObj;
     }
 
